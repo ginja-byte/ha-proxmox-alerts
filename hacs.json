@@ -3,5 +3,6 @@
   "render_readme": true,
   "homeassistant": "2024.6.0",
   "zip_release": false,
-  "country": ["ZA", "GB", "US", "DE", "NL"]
+  "hacs": "2.0.0",
+  "hide_default_branch": false
 }

@@ -1,14 +1,13 @@
 {
   "domain": "proxmox_alerts",
   "name": "Proxmox Alerts",
-  "version": "0.1.0",
-  "documentation": "https://github.com/ginja-byte/ha-proxmox-alerts",
-  "issue_tracker": "https://github.com/ginja-byte/ha-proxmox-alerts/issues",
   "codeowners": ["@ginja-byte"],
   "config_flow": true,
+  "dependencies": ["webhook"],
+  "documentation": "https://github.com/ginja-byte/ha-proxmox-alerts",
   "integration_type": "service",
   "iot_class": "local_push",
-  "dependencies": ["webhook"],
+  "issue_tracker": "https://github.com/ginja-byte/ha-proxmox-alerts/issues",
   "requirements": [],
-  "quality_scale": "silver"
+  "version": "0.1.0"
 }
