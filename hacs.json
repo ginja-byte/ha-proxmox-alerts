@@ -1,0 +1,7 @@
+{
+  "name": "Proxmox Alerts",
+  "render_readme": true,
+  "homeassistant": "2024.6.0",
+  "zip_release": false,
+  "country": ["ZA", "GB", "US", "DE", "NL"]
+}

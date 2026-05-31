@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Proxmox Alerts",
+        "description": "Create a webhook endpoint for a Proxmox VE or PBS instance. After setup, copy the generated webhook URL from the integration's device page into Proxmox under Datacenter → Notifications → Webhook.",
+        "data": {
+          "name": "Instance name",
+          "source_type": "Source type"
+        },
+        "data_description": {
+          "name": "A short label for this Proxmox instance (e.g. \"Main Cluster\", \"Offsite PBS\"). Multiple instances are supported.",
+          "source_type": "Choose 'pve' for Proxmox VE or 'pbs' for Proxmox Backup Server."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "An instance with this name and source type is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Proxmox Alerts options",
+        "data": {
+          "route_info_events": "Forward info-severity events",
+          "log_raw_payloads": "Log raw webhook payloads"
+        },
+        "data_description": {
+          "route_info_events": "When off, info events are still received but no HA event is fired and entity state is not updated. Useful to suppress routine notifications without disabling the webhook.",
+          "log_raw_payloads": "Useful for debugging payload format issues. Logs every raw payload to the HA log at info level."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_event": {
+        "name": "Last event"
+      },
+      "last_severity": {
+        "name": "Last severity",
+        "state": {
+          "info": "Info",
+          "warn": "Warning",
+          "critical": "Critical"
+        }
+      },
+      "event_count": {
+        "name": "Event count"
+      }
+    }
+  }
+}

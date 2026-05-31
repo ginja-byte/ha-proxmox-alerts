@@ -1,0 +1,14 @@
+{
+  "domain": "proxmox_alerts",
+  "name": "Proxmox Alerts",
+  "version": "0.1.0",
+  "documentation": "https://github.com/your-org/ha-proxmox-alerts",
+  "issue_tracker": "https://github.com/your-org/ha-proxmox-alerts/issues",
+  "codeowners": ["@your-org"],
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "dependencies": ["webhook"],
+  "requirements": [],
+  "quality_scale": "silver"
+}
