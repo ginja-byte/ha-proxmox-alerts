@@ -1,7 +1,7 @@
 # Proxmox Alerts for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/)
-[![Validate](https://github.com/your-org/ha-proxmox-alerts/actions/workflows/validate.yml/badge.svg)](https://github.com/your-org/ha-proxmox-alerts/actions/workflows/validate.yml)
+[![Validate](https://github.com/ginja-byte/ha-proxmox-alerts/actions/workflows/validate.yml/badge.svg)](https://github.com/ginja-byte/ha-proxmox-alerts/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Receive webhook notifications from **Proxmox VE** and **Proxmox Backup Server** in Home Assistant. Each Proxmox instance is added as its own integration entry with a dedicated webhook URL, exposing sensor entities for the last event, last severity, and total event count.
@@ -26,7 +26,7 @@ Receive webhook notifications from **Proxmox VE** and **Proxmox Backup Server** 
 ### HACS (recommended)
 
 1. Open HACS → **Integrations** → menu (⋮) → **Custom repositories**.
-2. Add `https://github.com/your-org/ha-proxmox-alerts` with category **Integration**.
+2. Add `https://github.com/ginja-byte/ha-proxmox-alerts` with category **Integration**.
 3. Install **Proxmox Alerts** from the list, then restart Home Assistant.
 
 ### Manual
